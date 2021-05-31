@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>org.example.viewbinding-migration</id>
+    <name>Viewbinding Migraiton</name>
+    <vendor email="arthur.k.ghazaryan@gmail.com" url="https://github.com/arthur-ghazaryan">Arthur Ghazaryan</vendor>
+
+    <description><![CDATA[
+    Plugin for migration from synthetics to viewbinding
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <action id="com.ag.viewbinding.migration.MigrateToViewBindingAction"
+                class="com.ag.viewbinding.migration.MigrateToViewBindingAction" text="Migrate to ViewBinding"
+                description="Action which migrates synthetic's to view binding">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
