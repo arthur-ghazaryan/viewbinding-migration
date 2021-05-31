@@ -34,4 +34,4 @@ my_view_id -> myViewId
 
 # ⚠️ WIP warning
 
-The plugin is under heavy development, code is messy and should be refactored in the future, some features like nullable binding properties and activity migrations also in wip but you free to try and share some feedback 🙂
+The plugin is under heavy development, code is messy and should be refactored in the future, some features like nullable binding properties and activity migrations, nested layouts also in wip but you free to try and share some feedback 🙂
